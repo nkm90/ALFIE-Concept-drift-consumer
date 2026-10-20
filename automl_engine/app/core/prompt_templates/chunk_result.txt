@@ -1,0 +1,13 @@
+{% if summary %}
+ Finished analyzing `{{ filename }}`.
+
+**Average WCAG Score:** {{ average_score }}/10
+{% else %}
+📄 **Chunk {{ chunk_index + 1 }}/{{ num_chunks }} of `{{ filename }}` (lines {{ start_line }}-{{ end_line }})**
+{{ response }}
+
+{% if image_feedback %}
+🖼**Image ALT Text Review**:
+{{ image_feedback }}
+{% endif %}
+{% endif %}

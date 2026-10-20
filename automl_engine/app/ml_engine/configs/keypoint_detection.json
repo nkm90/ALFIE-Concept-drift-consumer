@@ -1,0 +1,12 @@
+{
+  "small_models": ["usyd-community/vitpose-small-simple", "nielsr/vitpose-small"],
+  "medium_models": ["usyd-community/vitpose-base-simple", "nielsr/vitpose-base"],
+  "large_models": ["usyd-community/vitpose-large-simple", "nielsr/vitpose-large"],
+  "lr_low": 1e-5,
+  "lr_high": 1e-3,
+  "batch_sizes": [8, 16, 32],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 20,
+  "early_stopping_patience": 3
+}

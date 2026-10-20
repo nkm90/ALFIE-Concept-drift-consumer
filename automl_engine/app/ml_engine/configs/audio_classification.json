@@ -1,0 +1,12 @@
+{
+  "small_models": ["facebook/wav2vec2-base", "microsoft/wavlm-base"],
+  "medium_models": ["facebook/wav2vec2-base-960h", "microsoft/wavlm-base-plus"],
+  "large_models": ["facebook/wav2vec2-large", "microsoft/wavlm-large"],
+  "lr_low": 1e-5,
+  "lr_high": 1e-3,
+  "batch_sizes": [8, 16, 32],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 20,
+  "early_stopping_patience": 3
+}

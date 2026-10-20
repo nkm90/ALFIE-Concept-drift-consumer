@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page_title }}</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+            .message { margin-bottom: 20px; }
+            .user { font-weight: bold; color: #2a4d9b; }
+            .assistant { font-weight: bold; color: #228B22; }
+            hr { border: none; border-top: 1px solid #ccc; margin: 20px 0; }
+        </style>
+    </head>
+    <body>
+        <h1>{{ page_title }}</h1>
+
+        {% for message in messages %}
+            {% if message.role != 'user-hidden' and message.content %}
+                <div class="message">
+                    <div class="{{ message.role }}">{{ message.role.capitalize() }}:</div>
+                    <div>{{ message.content | safe }}</div>
+                </div>
+                <hr>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>

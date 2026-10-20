@@ -1,0 +1,21 @@
+Your job is to read the provided image and recreate it as a runnable website.
+
+Requirements:
+- Provide production-ready HTML, CSS, and JavaScript in your response.
+- Preserve any text not only for the body but also the UI elements
+- Recreate the layout, typography, colors, and interactions as faithfully as possible.
+- Implement enough functionality to replicate the major visible interactions (e.g., nav hovers, buttons, simple forms).
+- If the design suggests responsive behavior, include responsive CSS.
+- Keep external dependencies minimal; prefer vanilla HTML/CSS/JS unless a framework is clearly implied.
+- Include brief instructions at the end on how to run the site locally (e.g., open index.html, or run a static server).
+
+Output format:
+- Start with a short summary of the approach and assumptions.
+- Then provide a single self-contained code listing with clear file separation comments, for example:
+  <!-- index.html -->
+  ...
+  /* styles.css */
+  ...
+  // script.js
+  ...
+- Ensure all assets referenced are either embedded (data URIs) or explained how to substitute.

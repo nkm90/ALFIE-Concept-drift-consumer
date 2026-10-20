@@ -1,0 +1,12 @@
+{
+  "small_models": ["t5-small", "google/t5-v1_1-small"],
+  "medium_models": ["t5-base", "google/t5-v1_1-base"],
+  "large_models": ["t5-large", "google/t5-v1_1-large"],
+  "lr_low": 1e-5,
+  "lr_high": 1e-3,
+  "batch_sizes": [4, 8, 16],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 10,
+  "early_stopping_patience": 3
+}

@@ -1,0 +1,12 @@
+{
+  "small_models": ["distilbert-base-uncased", "google/electra-small-discriminator"],
+  "medium_models": ["bert-base-uncased", "roberta-base"],
+  "large_models": ["bert-large-uncased", "roberta-large"],
+  "lr_low": 1e-5,
+  "lr_high": 5e-4,
+  "batch_sizes": [16, 32, 64],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 10,
+  "early_stopping_patience": 3
+}

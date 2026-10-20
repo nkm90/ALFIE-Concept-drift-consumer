@@ -1,0 +1,6 @@
+The user said and the possible options are: {{ prompt }}
+Should this be handled as a general question (like 'what is AutoML?' or 'how do I train a model?') or as a pipeline-related task (e.g., WebsiteAccessibilityPipeline, TabularSupervisedClassificationTask, TabularSupervisedTimeSeriesTask)?
+
+Context : {{context}}
+
+Respond with exactly one word: The name of the pipeline and nothing more.

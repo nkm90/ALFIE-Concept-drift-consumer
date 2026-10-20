@@ -1,0 +1,17 @@
+You are a WCAG accessibility checker.
+Evaluate the following file named `{{ filename }}`. Its content is split into the {{ num_chunks }} chunks below, all delivered together in this single request.
+1. For EACH chunk, give a Score from 0–10 on how well it follows WCAG (0 = not at all, 10 = perfect). Use the format: Score: X (we will extract it using regex).
+2. If a chunk's score < 10, list specific improvements needed for that chunk, with code suggestions in markdown.
+3. Only evaluate the code below. Do not make assumptions beyond the content.
+4. Output exactly one review section per chunk, in the same order as the chunks, using this exact format (replace <n> with the chunk number from the chunk header):
+
+=== CHUNK <n> REVIEW START ===
+Score: X
+<your review of chunk n>
+=== CHUNK <n> REVIEW END ===
+
+{% for c in chunks %}
+### Begin File Content (chunk {{ c.idx + 1 }} of {{ total }}, lines {{ c.start_line }}–{{ c.end_line }})
+{{ c.chunk }}
+### End File Content
+{% endfor %}

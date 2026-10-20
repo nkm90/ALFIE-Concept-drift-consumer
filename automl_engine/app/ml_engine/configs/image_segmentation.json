@@ -1,0 +1,22 @@
+{
+  "small_models": [
+    "nvidia/mit-b0"
+  ],
+  "medium_models": [
+    "nvidia/mit-b2"
+  ],
+  "large_models": [
+    "nvidia/mit-b4"
+  ],
+  "lr_low": 1e-5,
+  "lr_high": 0.001,
+  "batch_sizes": [
+    4,
+    8,
+    16
+  ],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 0.01,
+  "max_epochs": 20,
+  "early_stopping_patience": 3
+}

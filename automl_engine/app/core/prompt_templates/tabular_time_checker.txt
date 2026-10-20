@@ -1,0 +1,1 @@
+How long does the user want to wait? Return answer in seconds only, if theysay it in minutes, convert it to seconds. If nothing was found, return 10. User: {{ user_input }}

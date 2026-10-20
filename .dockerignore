@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+*.log
+.env
+.env.*
+.idea
+.vscode
+.git
+.github
+*.zip
+*.tar
+*.gz
+concept_drift_upload_debug

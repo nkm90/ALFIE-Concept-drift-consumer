@@ -1,0 +1,3 @@
+Which task type do you think this is? Answer only with the task type from these options.
+From the file context, if it is a table or if the user mentions, try to identify if it could be a timeseries task instead of the usual classification/regression.
+Do not modify the names or add extra spaces: {{ task_type_options }}

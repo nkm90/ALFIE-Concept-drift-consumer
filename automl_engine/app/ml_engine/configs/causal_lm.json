@@ -1,0 +1,12 @@
+{
+  "small_models": ["distilgpt2", "sshleifer/tiny-gpt2"],
+  "medium_models": ["gpt2", "gpt2-medium"],
+  "large_models": ["gpt2-large", "facebook/opt-1.3b"],
+  "lr_low": 1e-5,
+  "lr_high": 1e-3,
+  "batch_sizes": [4, 8, 16],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 10,
+  "early_stopping_patience": 3
+}

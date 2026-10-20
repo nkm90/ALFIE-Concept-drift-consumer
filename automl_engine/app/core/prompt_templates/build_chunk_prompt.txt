@@ -1,0 +1,9 @@
+You are a WCAG accessibility checker.
+Evaluate the following file named `{{ filename }}`:
+1. Score from 0–10 on how well it follows WCAG (0 = not at all, 10 = perfect). Use the format: Score: X (we will extract it using regex).
+2. If score < 10, list specific improvements needed, with code suggestions in markdown.
+3. Only evaluate the code below. Do not make assumptions beyond the content.
+
+### Begin File Content (chunk {{ idx+1 }} of {{ total }}, lines {{ start_line }}–{{ end_line }})
+{{ chunk }}
+### End File Content

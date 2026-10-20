@@ -1,0 +1,22 @@
+services:
+  concept-drift-consumer:
+    image: ${CDD_IMAGE}
+    container_name: alfie-cdd
+
+    env_file:
+      - .env.cdd.local
+
+    restart: unless-stopped
+
+    networks:
+      - data-warehouse-network
+      - automl-network
+
+networks:
+  data-warehouse-network:
+    external: true
+    name: ${DW_NETWORK}
+
+  automl-network:
+    external: true
+    name: ${AUTOML_NETWORK}

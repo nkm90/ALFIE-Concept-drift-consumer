@@ -1,0 +1,12 @@
+{
+  "small_models": ["distilbert-base-uncased-distilled-squad", "deepset/minilm-uncased-squad2"],
+  "medium_models": ["bert-base-uncased", "deepset/roberta-base-squad2"],
+  "large_models": ["deepset/roberta-large-squad2", "bert-large-uncased-whole-word-masking-finetuned-squad"],
+  "lr_low": 1e-5,
+  "lr_high": 5e-4,
+  "batch_sizes": [8, 16, 32],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 10,
+  "early_stopping_patience": 3
+}

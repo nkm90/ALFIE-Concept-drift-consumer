@@ -1,0 +1,12 @@
+{
+  "small_models": ["hustvl/yolos-tiny", "facebook/detr-resnet-50"],
+  "medium_models": ["facebook/detr-resnet-50", "microsoft/table-transformer-detection"],
+  "large_models": ["facebook/detr-resnet-101", "microsoft/conditional-detr-resnet-50"],
+  "lr_low": 1e-5,
+  "lr_high": 1e-3,
+  "batch_sizes": [4, 8, 16],
+  "weight_decay_low": 1e-6,
+  "weight_decay_high": 1e-2,
+  "max_epochs": 20,
+  "early_stopping_patience": 3
+}

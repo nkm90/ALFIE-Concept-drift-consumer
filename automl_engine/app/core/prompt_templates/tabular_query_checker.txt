@@ -1,0 +1,4 @@
+Did the user mention what you think could be a target column for the tabular data classification/regression?
+If yes, what is the column name? Only return the column name, nothing else. ignore the words column and similar in the output.
+Eg: Classify X -> X, Classify signature column -> signature, recognize different classes -> no, classify -> no, signature column -> signature
+If no, return 'no'. User messages:\n {{ user_text }} {{ messages }}
